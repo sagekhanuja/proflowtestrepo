@@ -4,21 +4,37 @@
     <meta charset="UTF-8" />
     <title>Home</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Add custom styles for the search button */
+      #search-button {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 2px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <h1 id="test">Test</h1>
     <table id="todo-table"></table>
+
+    <!-- Add the search button in the appropriate section -->
+    <button id="search-button">Search</button>
+
     <button id="test-button">Test Button</button>
-    <!-- TODO: Add a new button element with the label "Search" -->
-    <!-- <button id="search-button">Search</button> -->
   </body>
   <script src="main.js"></script>
+  <script>
+    // Add event listener for the search button
+    document.getElementById("search-button").addEventListener("click", function() {
+      // Add the functionality for the search button
+      console.log("Search button clicked");
+    });
+  </script>
 </html>
-
-<!-- TODO: 
-1. Create a new branch for the feature.
-2. Add the new button element to the homepage with the label "Search".
-3. Style the button with a blue background color and appropriate dimensions in the style.css file.
-4. Test the button appearance on different screen sizes and browsers.
-5. Submit a pull request for review and merge into the main branch.
--->
