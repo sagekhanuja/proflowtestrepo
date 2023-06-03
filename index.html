@@ -4,29 +4,36 @@
     <meta charset="UTF-8" />
     <title>Home</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- TODO: Add the following CSS to style.css file:
-      #test-button {
-        background-color: red;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-      }
-    -->
   </head>
   <body>
     <h1 id="test">Test</h1>
     <table id="todo-table"></table>
-    <button id="test-button">Test Button</button>
+    <!-- TODO: Change the button id to "toggle-button" -->
+    <button id="toggle-button">Toggle Button</button>
   </body>
   <script src="main.js"></script>
-  <!-- TODO: Add the following JavaScript code to main.js file:
-    document.getElementById('test-button').addEventListener('click', function() {
-      var button = document.getElementById('test-button');
-      if (button.style.backgroundColor === 'red') {
-        button.style.backgroundColor = 'green';
-      } else {
-        button.style.backgroundColor = 'red';
-      }
-    });
-  -->
 </html>
+
+// TODO: Add the following CSS to style.css
+/*
+#toggle-button {
+  background-color: red;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+*/
+
+// TODO: Add the following JavaScript to main.js
+/*
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleButton = document.getElementById('toggle-button');
+  toggleButton.addEventListener('click', function() {
+    if (toggleButton.style.backgroundColor === 'red') {
+      toggleButton.style.backgroundColor = 'green';
+    } else {
+      toggleButton.style.backgroundColor = 'red';
+    }
+  });
+});
+*/
